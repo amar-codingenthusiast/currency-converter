@@ -96,6 +96,7 @@ h2 {
 	font-size: 16px;
 	text-align: left;
 	border: none;
+	background-color: transparent;
 }
 .amount:focus,
 .type:focus {
@@ -194,8 +195,5 @@ h2 {
 	}
 	.currency {
 		margin: 5px;
-	}
-	select {
-		background-color: transparent;
 	}
 }
