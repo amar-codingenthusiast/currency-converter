@@ -158,6 +158,7 @@ h2 {
 		width: auto;
 		margin: 10px;
 		padding: 5px;
+		height: 100svh;
 	}
 	#feedback {
 		bottom: -40px;
