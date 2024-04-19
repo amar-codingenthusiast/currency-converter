@@ -160,7 +160,7 @@ h2 {
 		padding: 5px;
 	}
 	#feedback {
-		bottom: -40px;
+		bottom: -30px;
 	}
 	.top-info {
 		display: block;
@@ -179,6 +179,8 @@ h2 {
 	#part2 img {
 		order: 2;
 		margin: 5px 0 0 0;
+		height: 150px;
+		width: 315px;
 	}
 	#combo {
 		display: flex;
@@ -190,7 +192,7 @@ h2 {
 	#combo #follow {
 		margin: 0 5px;
 	}
-	select {
-        	background-color: transparent;
+	.currency {
+		margin: 5px;
 	}
 }
