@@ -37,7 +37,7 @@ Feel free to explore the site and experience its features firsthand!
 
 ## Credits
 
-This project was built by Amar Kumar. It is a simplified version of Google's currency converter and is intended for educational purposes.
+This project is built by Amar Kumar. It is a simplified version of Google's currency converter and is intended for educational purposes.
 
 ## License
 
