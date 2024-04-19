@@ -195,4 +195,7 @@ h2 {
 	.currency {
 		margin: 5px;
 	}
+	select {
+		background-color: transparent;
+	}
 }
