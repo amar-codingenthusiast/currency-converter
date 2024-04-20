@@ -16,7 +16,7 @@ This project is a currency converter application inspired by Google's currency c
 - CSS
 - JavaScript
 - Fetch API
-
+- Font Awesome
 ## How to Use
 
 1. Clone the repository: `git clone https://github.com/amar-codingenthusiast/currency-converter.git`
