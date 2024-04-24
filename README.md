@@ -4,7 +4,7 @@ This project is a currency converter application inspired by Google's currency c
 
 ## Features
 
-- Convert between different currencies in real-time
+- Converts between 150+ different currencies in real-time
 - Uses latest exchange rates from Open Exchange Rates API
 - User-friendly interface inspired by Google's currency converter
 - Responsive design for small devices
