@@ -1,8 +1,8 @@
 let types = document.querySelectorAll(".type");
 let amounts = document.querySelectorAll(".amount");
-let para1 = document.querySelector("#para1");
-let para2 = document.querySelector("#para2");
-let para3 = document.querySelector("#para3");
+let paras1 = document.querySelectorAll("#para1");
+let paras2 = document.querySelectorAll("#para2");
+let paras3 = document.querySelectorAll("#para3");
 let about = document.querySelector("#footer span");
 let timestamp = 0;
 
@@ -33,8 +33,10 @@ types.forEach((type) => {
 
 window.addEventListener("load", async () => {
 	let result = await callAPI("INR", "USD", 1);
-	para1.innerText = `1 Indian Rupee equals`;
-	para2.innerText = `${result} United States Dollar`;
+	paras1.forEach((para) => (para.innerText = `1 Indian Rupee equals`));
+	paras2.forEach(
+		(para) => (para.innerText = `${result} United States Dollar`)
+	);
 	amounts[0].value = 1;
 	amounts[1].value = result;
 	updateDateTime();
@@ -42,9 +44,13 @@ window.addEventListener("load", async () => {
 
 types.forEach((type) => {
 	type.addEventListener("change", async () => {
-		para1.innerText = `1 ${codes[types[0].value]} equals`;
 		let result = await callAPI(types[0].value, types[1].value, 1);
-		para2.innerText = `${result} ${codes[types[1].value]}`;
+		paras1.forEach(
+			(para) => (para.innerText = `1 ${codes[types[0].value]} equals`)
+		);
+		paras2.forEach(
+			(para) => (para.innerText = `${result} ${codes[types[1].value]}`)
+		);
 		amounts[1].value = (result * amounts[0].value).toFixed(3);
 		about.innerText = types[0].value + "/" + types[1].value;
 	});
@@ -83,6 +89,6 @@ let updateDateTime = async () => {
 		timeZone: "UTC",
 	};
 	let formattedDateTime = currentDate.toLocaleString("en-US", options);
-	para3.innerText = formattedDateTime + " UTC · ";
+	paras3.forEach((para) => (para.innerText = formattedDateTime + " UTC · "));
 };
 setInterval(updateDateTime, 60000);
